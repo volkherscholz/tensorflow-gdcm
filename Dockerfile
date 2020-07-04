@@ -3,7 +3,7 @@ FROM tensorflow/tensorflow:2.2.0-gpu
 # BUILD COMMANDS IF NECESSARY
 RUN apt-get update && \
     pip install --upgrade pip && \
-    apt install -y cmake-curses-gui checkinstall swig && \
+    apt-get install -y git cmake-curses-gui checkinstall swig && \
     mkdir gdcm && \ 
     cd gdcm && \
     git clone --branch release git://git.code.sf.net/p/gdcm/gdcm && \
